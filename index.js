@@ -1,9 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const cfg = require('./index.json');
 const fs = require('fs');
 const token = process.env.token
-
-client.login(token);
 
 client.commands = new Discord.Collection();
 
@@ -32,3 +31,5 @@ fs.readdir("./events/", (error, f) => {
         client.on(event, events.bind(null, client));
     });
 });
+
+client.login(token);
