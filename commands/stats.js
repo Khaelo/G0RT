@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 module.exports.run = async(client, message, args) => {
 
     const membre = message.mentions.members.first() || message.member;
+    //if(!membre) return message.channel.send(`Veuillez mentionner un utilisateur !`);
 
     message.channel.send({
         embed: {
@@ -17,8 +18,16 @@ module.exports.run = async(client, message, args) => {
                 value: membre.id 
                 },
                 {
+                    name: "Crée le :",
+                    value: membre.user.createdAt
+                },
+                {
                     name: "Jeu :",
                     value: `${membre.user.presence.game ? `${membre.user.presence.game.name}` : "Aucun jeu"}`
+                },
+                {
+                    name: "Rejoin le :",
+                    value: membre.joinedAt
                 }
             ],
             footer: {
