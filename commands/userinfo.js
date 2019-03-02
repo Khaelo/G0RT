@@ -11,6 +11,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor(0xe43333)
         .addField("Full Username:", `${message.author.username}#${message.author.discriminator}`)
         .addField("ID:", message.author.id)
+        .addField("Jeu:", `${message.author.user.presence.game ? `${message.author.user.presence.game.name}` : "Aucun jeu"}`)
         .addField("Created At:", message.author.createdAt)
 
         message.channel.send(userinf);
