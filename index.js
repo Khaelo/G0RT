@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const cfg = require('./index.json');
 const fs = require('fs');
 const token = process.env.token
 
