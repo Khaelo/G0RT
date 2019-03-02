@@ -7,10 +7,11 @@ module.exports.run = async (bot, message, args) => {
     var userinf = new Discord.RichEmbed()
         .setAuthor(message.author.username)
         .setThumbnail(message.author.avatarURL)
-        .setDescription("This is the user's info!")
-        .setColor(0x00FF00)
+        .setDescription(`Statistiques de l'utilisateur **${message.author.username}**`)
+        .setColor(0xe43333)
         .addField("Full Username:", `${message.author.username}#${message.author.discriminator}`)
         .addField("ID:", message.author.id)
+        .addField("Jeu:", `${author.user.presence.game ? `${author.user.presence.game.name}` : "Aucun jeu"}`)
         .addField("Created At:", message.author.createdAt)
 
         message.channel.send(userinf);
@@ -21,9 +22,10 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor(memberInfo.displayName)
         .setThumbnail(memberInfo.user.avatarURL)
         .setDescription("This is the user's info!")
-        .setColor(0x00FF00)
+        .setColor(0xe43333)
         .addField("Full Username:", `${memberInfo.user.username}#${memberInfo.user.discriminator}`)
         .addField("ID:", memberInfo.id)
+        .addField("Jeu:", `${memberInfo.user.presence.game ? `${memberInfo.user.presence.game.name}` : "Aucun jeu"}`)
         .addField("Created At:", memberInfo.user.createdAt)
 
         message.channel.send(userinfoo);
@@ -31,5 +33,5 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "userinfo"
+    name: "stats"
 }
