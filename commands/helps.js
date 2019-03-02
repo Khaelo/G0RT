@@ -1,4 +1,4 @@
-const Discord = module.require('discord.js');
+const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args, prefix) => {
 
@@ -23,5 +23,5 @@ module.exports.run = async (bot, message, args, prefix) => {
 }
 
 module.exports.help = {
-    name: "help"
+    name: "!G0H"
 }
