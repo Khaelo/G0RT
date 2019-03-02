@@ -23,5 +23,5 @@ module.exports.run = async (bot, message, args, prefix) => {
 }
 
 module.exports.help = {
-    name: "!GoH"
+    name: "GoH"
 }
