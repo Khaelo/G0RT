@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor(0xe43333)
         .addField("Full Username:", `${message.author.username}#${message.author.discriminator}`)
         .addField("ID:", message.author.id)
-        .addField("Jeu:", `${message.author.user.presence.game ? `${message.author.user.presence.game.name}` : "Aucun jeu"}`)
+        .addField("Jeu:", `${message.author.user.game ? `${message.author.user.game.name}` : "Aucun jeu"}`)
         .addField("Created At:", message.author.createdAt)
 
         message.channel.send(userinf);
@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor(0xe43333)
         .addField("Full Username:", `${memberInfo.user.username}#${memberInfo.user.discriminator}`)
         .addField("ID:", memberInfo.id)
-        .addField("Jeu:", `${memberInfo.user.presence.game ? `${memberInfo.user.presence.game.name}` : "Aucun jeu"}`)
+        .addField("Jeu:", `${memberInfo.user.game ? `${memberInfo.user.game.name}` : "Aucun jeu"}`)
         .addField("Created At:", memberInfo.user.createdAt)
 
         message.channel.send(userinfoo);
