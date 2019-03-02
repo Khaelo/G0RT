@@ -1,8 +1,12 @@
 const Discord = require('discord.js');
 
-bot.on('message', function (message) {
-    if(message.content === '!ping') {
+module.exports.run = async(client, message, args) => {
 
-        message.reply('pong')
-    }
-});
+    let debut = Date.now();
+    await message.channel.send("Ping").then(async(m) => await m.edit(`Pong : ${Date.now() - debut} ms`));
+
+};
+
+module.exports.help = {
+    name: "ping"
+}
