@@ -18,7 +18,7 @@ module.exports.run = async(client, message, args) => {
                 },
                 {
                     name: "Crée le :",
-                    value: membre.user.setTimestamp.createdAt
+                    value: membre.user.createdAt
                 },
                 {
                     name: "Jeu :",
