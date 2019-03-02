@@ -5,13 +5,6 @@ const token = process.env.token
 
 client.commands = new Discord.Collection();
 
-bot.on('message', function (message) {
-    if(message.content === '!ping') {
-
-        message.reply('pong')
-    }
-});
-
 fs.readdir("./commands/", (error, f) => {
     if(error) console.log(error);
 
