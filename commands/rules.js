@@ -2,23 +2,23 @@ const Discord = require('discord.js');
 
 var rules1 = new Discord.RichEmbed()
         .addField("Rules (1/2):", "---------------------------------------------------------------------------------------\n" +
-                                  "__**1.**__ No spamming or flooding the chat with messages, symbols or pictures etc. \n" +
-                                  "__**2.**__ Do not type in all Caps, Bold, Italic or other formats unless you're a  Admin. \n" +
-                                  "__**3.**__ adult (18+), explicit images etc, go to the NSFW channel \n" +
-                                  "__**4.**__ No racist or degrading content.\n" +
+                                  "__**1.**__ Pas de spam ou de flood avec des messages, symbols ou photos, etc. \n" +
+                                  "__**2.**__ Pas de messages en FULL MAJUSCULES, GRAS ou Italique sauf si vous êtes Admin. \n" +
+                                  "__**3.**__ Les messages à caractère sexuel et choquant sont totalement interdit !\n" +
+                                  "__**4.**__ Pas de contenu content des injures raciales, homophobes etc..\n" +
                                   "__**5.**__ No excessively cursing. \n" +
-                                  "__**6.**__ No advertising other sites/discord servers without permission. \n" +
-                                  "__**7.**__ No posting external links other than direct links to youtube\n", true)
+                                  "__**6.**__ Les pubs pour les Discord/Web sont totalement interdites ! \n" +
+                                  "__**7.**__ Aucune publication de liens externes autres que des liens directs vers YouTube !\n", true)
 
         .setColor("0xFF0000")
 
 var rules2 = new Discord.RichEmbed()
-        .addField("Rules (2/2):", "__**8.**__ No using peoples usernames and/or posing as them. \n" +
-                                  "__**9.**__ No begging or repeatedly asking for permissions in the chat. \n" +
-                                  "__**10.**__. No offensive names or names which contain swear words. \n" +
-                                  "__**11.**__ Do not argue with staff there decisions are final. \n" +
-                                  "__**12.**__ Do not repeatedly message Moderators or Admins without permission \n" +
-                                  "__**13.**__ Do not message people, Moderators or Admins with \"Stupid\" questions \n" +
+        .addField("Rules (2/2):", "__**8.**__ Ne pas utiliser le pseudo d'un autre utilisateur et/ou se faire passer pour lui ! \n" +
+                                  "__**9.**__ L'abus de demande de grade est interdite ! \n" +
+                                  "__**10.**__. Pas de noms offensants ni de noms contenant des gros mots. \n" +
+                                  "__**11.**__ Une décission prise par un membre du staff/modo est définitive et donc ne sont pas discutables ! \n" +
+                                  "__**12.**__ Ne pas envoyer de message à plusieurs reprises aux staff/modérateurs ou aux administrateurs sans autorisation.\n" +
+                                  "__**13.**__ Ne pas envoyer de message aux staff/modérateurs contenant des questions \"STUPIDES\" \n" +
                                   "---------------------------------------------------------------------------------------\n", true)
 
         .setColor("0xFF0000")
