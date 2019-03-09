@@ -10,7 +10,7 @@ var rules1 = new Discord.RichEmbed()
                                   "__**6.**__ Les pubs pour les Discord/Web sont totalement interdites ! \n" +
                                   "__**7.**__ Aucune publication de liens externes autres que des liens directs vers YouTube !\n", true)
 
-        .setColor("0xFF0000")
+        .setColor("0x#d81913")
 
 var rules2 = new Discord.RichEmbed()
         .addField("Rules (2/2):", "__**8.**__ Ne pas utiliser le pseudo d'un autre utilisateur et/ou se faire passer pour lui ! \n" +
@@ -21,7 +21,7 @@ var rules2 = new Discord.RichEmbed()
                                   "__**13.**__ Ne pas envoyer de message aux staff/modérateurs contenant des questions \"STUPIDES\" \n" +
                                   "---------------------------------------------------------------------------------------\n", true)
 
-        .setColor("0xFF0000")
+        .setColor("0x#d81913")
 
 module.exports.run = async (bot, message, args) => {
 
