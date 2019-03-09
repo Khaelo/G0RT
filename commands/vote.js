@@ -5,7 +5,7 @@ const disagree = "❎";
 
 module.exports.run = async (bot, message, args) => {
 
-  let msg = await message.channel.send("Vote now! (10 Seconds)");
+  let msg = await message.channel.send("Vote now! (30 Seconds)");
   await msg.react(agree);
   await msg.react(disagree);
 
